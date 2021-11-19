@@ -11,8 +11,7 @@ if err != nil {
     log.Fatalln(err)
 }
 
-// listFile, err := client.ListFile("/var/lib")
-listFile, err := client.ListFile(".")
+listFile, err := client.ListFile("/folder")
 if err != nil {
     log.Fatalln(err)
 }
