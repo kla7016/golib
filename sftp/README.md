@@ -15,6 +15,7 @@ listFile, err := client.ListFile("/folder")
 if err != nil {
     log.Fatalln(err)
 }
+
 for _, file := range listFile {
     fmt.Println("name", file.Name)
     fmt.Println("name", file.Size)
@@ -34,5 +35,6 @@ srcFile, err := client.OpenFile("/folder/a.xlsx", (os.O_RDONLY))
 if err != nil {
     log.Fatalln(err)
 }
+
 defer srcFile.Close()
 ```
