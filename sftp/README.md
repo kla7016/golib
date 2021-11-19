@@ -31,7 +31,7 @@ if err != nil {
     log.Fatalln(err)
 }
 
-srcFile, err := sc.client.OpenFile("/folder/a.xlsx", (os.O_RDONLY))
+srcFile, err := client.OpenFile("/folder/a.xlsx", (os.O_RDONLY))
 if err != nil {
     log.Fatalln(err)
 }
