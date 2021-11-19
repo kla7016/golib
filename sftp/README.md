@@ -29,7 +29,6 @@ go get -u github.com/kla7016/golib/sftp
 	srcFile, err := sc.client.OpenFile(<remote_dir>, (os.O_RDONLY))
 	if err != nil {
 		log.Fatalln(err)
-		return
 	}
 	defer srcFile.Close()
 ```
