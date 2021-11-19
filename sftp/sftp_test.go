@@ -42,7 +42,6 @@ func TestDownloadFile(t *testing.T) {
 	srcFile, err := sc.client.OpenFile(dir, (os.O_RDONLY))
 	if err != nil {
 		t.Errorf("Unable to open remote file: %v", err)
-		return
 	}
 	defer srcFile.Close()
 }

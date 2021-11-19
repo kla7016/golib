@@ -16,6 +16,11 @@ listFile, err := client.ListFile(".")
 if err != nil {
     log.Fatalln(err)
 }
+for _, file := range listFile {
+    fmt.Println("name", file.Name)
+    fmt.Println("name", file.Size)
+    fmt.Println("name", file.ModTime)
+}
 ```
 
 
