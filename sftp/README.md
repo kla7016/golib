@@ -6,12 +6,12 @@ go get -u github.com/kla7016/golib/sftp
 ```
 ## Example ListFile
 ```
-    client, err := sftp.NewConn("<host>", "<username>", "<password>", 22)
+        client, err := sftp.NewConn("<host>", "<username>", "<password>", 22)
 	if err != nil {
 		log.Fatalln(err)
 	}
 
-    // listFile, err := client.ListFile("/var/lib")
+        // listFile, err := client.ListFile("/var/lib")
 	listFile, err := client.ListFile(".")
 	if err != nil {
 		log.Fatalln(err)
@@ -21,7 +21,7 @@ go get -u github.com/kla7016/golib/sftp
 
 ## Example OpenFile
 ```
-    client, err := sftp.NewConn("<host>", "<username>", "<password>", 22)
+        client, err := sftp.NewConn("<host>", "<username>", "<password>", 22)
 	if err != nil {
 		log.Fatalln(err)
 	}
