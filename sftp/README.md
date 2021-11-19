@@ -31,8 +31,7 @@ if err != nil {
     log.Fatalln(err)
 }
 
-// <remote_dir> ex:  '/folder/a.xlsx'
-srcFile, err := sc.client.OpenFile(<remote_dir>, (os.O_RDONLY))
+srcFile, err := sc.client.OpenFile("/folder/a.xlsx", (os.O_RDONLY))
 if err != nil {
     log.Fatalln(err)
 }
