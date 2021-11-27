@@ -8,7 +8,6 @@ require (
 )
 
 require (
-	github.com/jlaffaye/ftp v0.0.0-20211117213618-11820403398b // indirect
 	github.com/joho/godotenv v1.4.0 // indirect
 	github.com/kr/fs v0.1.0 // indirect
 	golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1 // indirect
